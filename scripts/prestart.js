@@ -1,3 +1,3 @@
 const chalk = require('chalk')
 
-console.log(chalk.green('Starting the app'))
+console.log(chalk.green('Starting the app ...'))
