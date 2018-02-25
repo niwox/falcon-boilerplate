@@ -2,7 +2,7 @@
   "name": "falcon-boilerplate",
   "version": "1.0.0",
   "scripts": {
-    "prestart": "node internals/scripts/prestart.js",
+    "prestart": "node scripts/prestart.js",
     "start": "node server/index.js",
     "security": "nsp check"
   },
