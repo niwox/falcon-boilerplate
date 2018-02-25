@@ -2,9 +2,9 @@
   "name": "falcon-boilerplate",
   "version": "1.0.0",
   "scripts": {
-    "prestart": "node scripts/prestart.js",
-    "server": "node server/index.js",
-    "all": "npm-run-all security server",
+    "prestart": "babel-node scripts/prestart.js",
+    "start": "node server/index.js",
+    "all": "npm-run-all security start",
     "security": "nsp check"
   },
   "repository": "git@github.com:niwox/falcon-boilerplate.git",
@@ -14,6 +14,8 @@
     "express": "^4.16.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "chalk": "^2.3.1",
     "npm-run-all": "^4.1.2",
     "nsp": "^3.2.1"
