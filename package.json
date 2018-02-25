@@ -4,6 +4,8 @@
   "scripts": {
     "prestart": "babel-node scripts/prestart.js",
     "start": "node server/index.js",
+    "build": "webpack --config config/webpack.dev.js",
+    "watch": "webpack --config config/webpack.dev.js --watch",
     "all": "npm-run-all security start",
     "security": "nsp check"
   },
@@ -15,9 +17,12 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.3",
     "babel-preset-env": "^1.6.1",
     "chalk": "^2.3.1",
     "npm-run-all": "^4.1.2",
-    "nsp": "^3.2.1"
+    "nsp": "^3.2.1",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^2.0.9"
   }
 }
