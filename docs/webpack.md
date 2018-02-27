@@ -11,14 +11,15 @@ module.exports = (source) => {
 **Babel**
 https://github.com/babel/babel-loader
 
-**CSS**
-css-loader: https://github.com/webpack-contrib/css-loader
-style-loader: 
+**CSS**  
+css-loader: https://github.com/webpack-contrib/css-loader  
+style-loader: https://github.com/webpack-contrib/style-loader
+
 
 **URL/File**
-url-loader: https://github.com/webpack-contrib/url-loader
-file-loader: https://github.com/webpack-contrib/file-loader
-image-webpack-loader: https://github.com/tcoopman/image-webpack-loader (for compression)
+url-loader: https://github.com/webpack-contrib/url-loader  
+file-loader: https://github.com/webpack-contrib/file-loader  
+image-webpack-loader: https://github.com/tcoopman/image-webpack-loader  (for compression)  
 
 ## Plugins
 Changes to multiple files, create bundles, minify ...

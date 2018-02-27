@@ -1,7 +1,8 @@
 # Falcon Boilerplate
 Yet another opinionated boilerplate
 
-You can run the build with
-`yarn build`
-or
+- Build using npm scripts  
+`yarn build`  
+
+- Using `npx` and cli args  
 `npx webpack --config config/webpack.dev.js --mode development`
