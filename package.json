@@ -4,8 +4,9 @@
   "scripts": {
     "prestart": "babel-node scripts/prestart.js",
     "start": "node server/index.js",
-    "build": "webpack --config config/webpack.dev.js",
-    "build:prod": "yarn build --env.prod=true",
+    "build": "webpack --config config/webpack.config.js",
+    "build:dev": "yarn build --env.env=dev",
+    "build:dev:bundleanalyze": "yarn build:dev --env.addons=bundleanalyze",
     "watch": "yarn build --watch",
     "all": "npm-run-all security start",
     "security": "nsp check"
@@ -31,7 +32,9 @@
     "uglifyjs-webpack-plugin": "^1.2.2",
     "url-loader": "^0.6.2",
     "webpack": "^4.0.0",
+    "webpack-bundle-analyzer": "^2.11.0",
     "webpack-cli": "^2.0.9",
-    "webpack-dev-server": "^3.1.0"
+    "webpack-dev-server": "^3.1.0",
+    "webpack-merge": "^4.1.2"
   }
 }

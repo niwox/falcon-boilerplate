@@ -34,6 +34,8 @@ class ExamplePlugin {
 ```
 - Uglify js : https://github.com/webpack-contrib/uglifyjs-webpack-plugin
 
+## Tools
+- Using `webpack-merge` to merge configs
 
 ## Review
 - `ContextReplacementPlugin`
