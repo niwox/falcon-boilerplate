@@ -1,4 +1,4 @@
-const path = require('path');
+const commonConfig = require('./webpack.common');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 console.log('cwd', process.cwd());
@@ -7,11 +7,7 @@ module.exports = env => {
   console.log('env', env);
 
   return {
-    entry: path.join(process.cwd(), 'app/index.js'),
-    output: {
-      filename: '[chunkhash].bundle.js',
-      // path: path.join(__dirname, 'build')
-    },
+    ...commonConfig,
     module: {
       rules: [
         {
