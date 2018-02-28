@@ -1,9 +1,10 @@
-const path = require('path');
+const commonPaths = require('./common-paths');
+
 const config = {
-  entry: path.join(process.cwd(), 'app/index.js'),
+  entry: commonPaths.ENTRY,
   output: {
     filename: '[chunkhash].bundle.js',
-    // path: path.join(__dirname, 'build')
+    path: commonPaths.OUTPUT
   },
 };
 
