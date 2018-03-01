@@ -4,11 +4,12 @@
   "scripts": {
     "prestart": "babel-node scripts/prestart.js",
     "start": "node server/index.js",
-    "build": "webpack --config config/webpack.config.js",
-    "build:dev": "yarn build --env.env=dev",
+    "dev": "webpack --config config/webpack.config.js --env.env=dev",
     "build:dev:bundleanalyze": "yarn build:dev --env.addons=bundleanalyze",
+    "server": "webpack-dev-server --open --config config/webpack.config.js --env.env=dev",
     "watch": "yarn build --watch",
     "all": "npm-run-all security start",
+    "debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js --config config/webpack.config.js",
     "security": "nsp check"
   },
   "repository": "git@github.com:niwox/falcon-boilerplate.git",
@@ -26,6 +27,7 @@
     "chalk": "^2.3.1",
     "css-loader": "^0.28.10",
     "file-loader": "^1.1.10",
+    "html-webpack-plugin": "^3.0.3",
     "npm-run-all": "^4.1.2",
     "nsp": "^3.2.1",
     "style-loader": "^0.20.2",

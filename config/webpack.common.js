@@ -1,5 +1,8 @@
-const commonPaths = require('./common-paths')
+const webpack = require('webpack')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+const { commonPaths } = require('./utils')
 
 const config = {
   entry: commonPaths.ENTRY,
@@ -33,7 +36,11 @@ const config = {
         ],
       },
     ],
-  }
+  },
+  plugins: [
+    new webpack.ProgressPlugin(),
+    new HtmlWebpackPlugin(),
+  ]
 };
 
 module.exports = config;

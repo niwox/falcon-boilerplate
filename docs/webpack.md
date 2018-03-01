@@ -26,7 +26,7 @@ Changes to multiple files, create bundles, minify ...
 ```js
 class ExamplePlugin {
   apply(compiler) {
-    compliler.plugin("run", (compiler, callback) => { // hook to webpack lifecycle
+    compiler.plugin("run", (compiler, callback) => { // hook to webpack lifecycle
       callback()
     })
   }
@@ -36,6 +36,10 @@ class ExamplePlugin {
 
 ## Tools
 - Using `webpack-merge` to merge configs
+
+
+## Debugging
+- Review debugging with `node --inspect`
 
 ## Review
 - `ContextReplacementPlugin`

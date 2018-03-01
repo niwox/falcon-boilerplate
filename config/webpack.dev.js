@@ -1,5 +1,14 @@
+const { commonPaths } = require('./utils')
+
+
 const config = {
-  devtool: 'source-maps'
+  mode: 'development',
+  devtool: 'source-maps',
+  devServer: {
+    contentBase: commonPaths.OUTPUT,
+    compress: true,
+    port: 9000
+  }
 }
 
 module.exports = config;
