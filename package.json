@@ -7,7 +7,6 @@
     "dev": "webpack --config config/webpack.config.js --env.env=dev",
     "build:dev:bundleanalyze": "yarn build:dev --env.addons=bundleanalyze",
     "server": "webpack-dev-server --open --config config/webpack.config.js --env.env=dev",
-    "watch": "yarn build --watch",
     "all": "npm-run-all security start",
     "debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js --config config/webpack.config.js",
     "security": "nsp check"
