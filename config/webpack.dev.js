@@ -8,6 +8,15 @@ const config = {
     contentBase: commonPaths.OUTPUT,
     compress: true,
     port: 9000
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        use: ['style-loader', 'css-loader'],
+      }
+    ]
   }
 }
 
